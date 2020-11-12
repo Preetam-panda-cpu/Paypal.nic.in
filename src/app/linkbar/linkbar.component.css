@@ -1,0 +1,36 @@
+nav ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    /* color: #fff; */
+    text-transform: uppercase;
+    font-weight: bold;
+    position: absolute;
+    color: #4a4a4a;
+    padding: 29px 376px;
+    margin-top: 2493px;
+}
+
+nav ul li a .nav-link1 {
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 438px;
+    margin-top: 2513px;
+    color: #4a4a4a;
+    text-decoration: none;
+}
+
+nav ul li a {
+    padding: 18px;
+    color: #4a4a4a;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+ul {
+    border-bottom: 1px solid #ccc;
+    height: 110px;
+    width: 100%;
+}

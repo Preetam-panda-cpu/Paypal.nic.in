@@ -1,0 +1,30 @@
+<section>
+    <article>
+        <div>
+            <h2>Login</h2>
+            <form class="form-check-inline" #form="ngForm" (ngsubmit)="submit(form)" novalidate>
+                <div class=" form-group ">
+                    <label for="username ">Username</label>
+                    <input type="text" id="username" ngModel #username="ngModel" (change)="GetUserName(username)" placeholder=" enter username " required minlength="3 " maxlength="10" pattern="^[a-zA-Z0-9_]{5,}[a-zA-Z]+[0-9]*$ " />
+                    <div class="error " *ngIf="username.invalid && username.touched ">
+                        <p *ngIf="username.errors.required ">Username is required</p>
+                        <p *ngIf="username.errors.minlength ">User name should be minimum 3 characters</p>
+                        <p *ngIf="username.errors.maxlength ">Username should not more than 10 characters</p>
+                        <p *ngIf="username.errors.pattern ">Username should be one lowercase, uppercase</p>
+                    </div>
+                </div>
+                <div class=" form-group ">
+                    <label for="password ">Password</label>
+                    <input type="Password " id="Password " placeholder=" enter Password " name="password " ngModel #password="ngModel" minlength="6" required/>
+                    <div class="error" *ngIf="password.invalid  &&  password.touched">
+                        <p *ngIf="password.errors.required">Password is required</p>
+                        <p *ngIf="password.errors.minlength ">Password should be minimum 6 characters</p>
+                    </div>
+                </div>
+                <div class=" form-group ">
+                    <button class="btn btn-primary" [disabled]="!form.valid">Login</button>
+                </div>
+            </form>
+        </div>
+    </article>
+</section>

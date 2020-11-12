@@ -1,0 +1,23 @@
+.paypalWorkBlock {
+    position: absolute;
+    background-color: #009cde;
+    background-image: radial-gradient(circle farthest-side at center bottom, #009cde, #003087 125%);
+    color: #fff;
+    margin-top: 1470px;
+    height: 600px;
+    width: 100%;
+}
+
+.paypalWorkBlock article {
+    display: flex;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.paypalWorkBlock article .leftBlock {
+    flex-basis: 50%;
+}
+
+.paypalWorkBlock article .rightBlock {
+    flex-basis: 50%;
+}
